@@ -1,0 +1,6 @@
+Projeto AGIR 
+Migração de gaps do ECC para o S4H
+GAP: S4H-FIN-EFD-M-035 - Validação de CNPJ de clientes e fornecedores
+
+Requisito basico 
+Para o grupo de contas NACO não verificar se CNPJ está duplicado

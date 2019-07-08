@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SOTS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SOTS>
+    <item>
+     <HEADER>
+      <CONCEPT>005056BE538F1ED8A697A6071560F2A1</CONCEPT>
+      <CREA_LAN>P</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXTL>
+       <CONCEPT>005056BE538F1ED8A697A6071560F2A1</CONCEPT>
+       <LANGU>P</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+      </SOTR_TEXTL>
+     </ENTRIES>
+    </item>
+    <item>
+     <HEADER>
+      <CONCEPT>005056BE538F1ED8A697BD62CD99D2C6</CONCEPT>
+      <CREA_LAN>P</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXTL>
+       <CONCEPT>005056BE538F1ED8A697BD62CD99D2C6</CONCEPT>
+       <LANGU>P</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+      </SOTR_TEXTL>
+     </ENTRIES>
+    </item>
+   </SOTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

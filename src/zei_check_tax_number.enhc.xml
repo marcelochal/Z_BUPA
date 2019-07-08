@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHC" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SHORTTEXT>Validação de CNPJ/CPF de clientes e fornecedores</SHORTTEXT>
+   <ENH_CHILDS>
+    <ENHNAME>ZEX_BUPA_TAX_NUMBER_CHECK</ENHNAME>
+    <ENHNAME>ZEX_BUPA_TAX_NUMBER_CHECK_1</ENHNAME>
+    <ENHNAME>ZEX_BUPA_TAX_NUMBER_CHECK_2</ENHNAME>
+    <ENHNAME>ZEX_BUPA_TAX_NUMBER_CHECK_3</ENHNAME>
+    <ENHNAME>ZEX_BUPA_TAX_NUMBER_CHECK_4</ENHNAME>
+   </ENH_CHILDS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

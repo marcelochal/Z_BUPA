@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZBUPA_S_VMDS_VENDOR_LFA1</TABNAME>
+    <DDLANGUAGE>P</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <LANGDEP>X</LANGDEP>
+    <DDTEXT>Dados do fornecedor</DDTEXT>
+    <MASTERLANG>P</MASTERLANG>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <TABNAME>ZBUPA_S_VMDS_VENDOR_LFA1</TABNAME>
+     <FIELDNAME>LFA1</FIELDNAME>
+     <POSITION>0001</POSITION>
+     <ROLLNAME>LFA1</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <DATATYPE>STRU</DATATYPE>
+     <MASK>  STRUS</MASK>
+     <COMPTYPE>S</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <TABNAME>ZBUPA_S_VMDS_VENDOR_LFA1</TABNAME>
+     <FIELDNAME>.INCLUDE</FIELDNAME>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <POSITION>0235</POSITION>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZBUPA_S_VMDS_VENDOR</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>Dados do fornecedor</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

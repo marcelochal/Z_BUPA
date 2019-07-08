@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Validação de CNPJ/CPF de clientes e fornecedores Export Memory</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>CLAS</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>CL_MDG_BS_FND_BP_CHECK</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>CLAS</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>CL_MDG_BS_FND_BP_CHECK</ORG_MAIN_NAME>
+    <PROGRAMNAME>CL_MDG_BS_FND_BP_CHECK========CP</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>CL_MDG_BS_FND_BP_CHECK========CP</PROGRAMNAME>
+     <ENHMODE>S</ENHMODE>
+     <FULL_NAME>\TY:CL_MDG_BS_FND_BP_CHECK\ME:TAXNUMBERS_CHECK\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>CALL METHOD zcl_bupa_tax_number_check=&gt;export_to_memory_bp_group(</item>
+      <item>is_bp-central_data-common-data-bp_control-grouping ).</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\TY:CL_MDG_BS_FND_BP_CHECK\ME:TAXNUMBERS_CHECK\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>4</item>
+      <item>17</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Interface Portal SERTRAS &lt;-&gt; BP Vendor</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZGF_BUPA001F01</SOBJ_NAME>
+    <SOBJ_NAME>LZGF_BUPA001T99</SOBJ_NAME>
+    <SOBJ_NAME>LZGF_BUPA001TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZGF_BUPA001</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZIF_VENDOR_CREATE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Criação de fornecedor</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_FORNECEDOR</PARAMETER>
+       <TYP>ZPF_FORNECEDOR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_LIFNR</PARAMETER>
+       <TYP>LIFNR</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>E_RETURN_MAP</PARAMETER>
+       <TYP>MDG_BS_BP_MSGMAP_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>E_RETURN</PARAMETER>
+       <TYP>BAPIRETM</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>I_BANCO_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_BANCO</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>I_IR_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_IR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_MESS_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_MENSAGEM</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_TEL_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_TELEFONE</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_CEL_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_CELULAR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_FAX_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_FAX</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_EMAIL_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_EMAIL</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_CONTATOS_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_CONTATO</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_FORNECEDOR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mestre de fornecedores (parte geral)</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_LIFNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº conta do fornecedor</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_RETURN_MAP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for structure MDG_BS_BP_MSGMAP</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Categoria de tabela de BAPIRETI p/objetos múltiplos</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_BANCO_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados bancários para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_IR_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados de imposto para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_MESS_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Estrutura de mensagem</STEXT>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_TEL_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados de Telefones para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 008</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_CEL_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados de celulares para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 009</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_FAX_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados de fax para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 010</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_EMAIL_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados de email para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 011</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_CONTATOS_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados de contatos para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 012</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZIF_VENDOR_DELETE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Exclusão de fornecedor</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_LIFNR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>LIFNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_CPF_CNPJ</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>LFA1-STCD1</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>E_MESS_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_MENSAGEM</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_LIFNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº conta do fornecedor</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_CPF_CNPJ</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>CPF/CNPJ</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_MESS_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mensagens de retorno</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZIF_VENDOR_DISPLAY</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Exibição de fornecedor - Seleção Dados</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_CPF_CNPJ</PARAMETER>
+       <TYP>LFA1-STCD1</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_FORNECEDOR</PARAMETER>
+       <TYP>ZPF_FORNECEDOR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>E_BANCO_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_BANCO</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_IR_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_IR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_MESS_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_MENSAGEM</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_TEL_TAB</PARAMETER>
+       <DBSTRUCT>ADR2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_FAX_TAB</PARAMETER>
+       <DBSTRUCT>ADR3</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_EMAIL_TAB</PARAMETER>
+       <DBSTRUCT>ADR6</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_CONTATOS_TAB</PARAMETER>
+       <DBSTRUCT>KNVK</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_CPF_CNPJ</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>CPF/CNPJ</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_FORNECEDOR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mestre de fornecedores (parte geral)</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_BANCO_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados bancários para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_IR_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados de imposto para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_MESS_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mensagens de retorno</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_TEL_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados Tel Fixo e celular para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_FAX_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados FAX e celular para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_EMAIL_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados email para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 008</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_CONTATOS_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mestre de clientes - pessoas de contato</STEXT>
+       <INDEX> 009</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZIF_VENDOR_UPDATE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Atualização de fornecedor</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_FORNECEDOR</PARAMETER>
+       <TYP>ZPF_FORNECEDOR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_FORNECEDORX</PARAMETER>
+       <TYP>ZPF_FORNECEDORX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_LIFNR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>LIFNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_CPF_CNPJ</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>LFA1-STCD1</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_LIFNR</PARAMETER>
+       <TYP>LIFNR</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>E_RETURN_MAP</PARAMETER>
+       <TYP>MDG_BS_BP_MSGMAP_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>E_RETURN</PARAMETER>
+       <TYP>BAPIRETM</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>I_BANCO_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_BANCO</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>I_IR_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_IR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_MESS_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_MENSAGEM</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_TEL_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_TELEFONE</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_CEL_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_CELULAR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_FAX_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_FAX</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_EMAIL_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_EMAIL</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_CONTATOS_TAB</PARAMETER>
+       <DBSTRUCT>ZPF_CONTATO</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_FORNECEDOR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mestre de fornecedores (parte geral)</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_FORNECEDORX</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados fornecedor para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_LIFNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº conta do fornecedor</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_CPF_CNPJ</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº ID fiscal 1</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_LIFNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº conta do fornecedor</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_RETURN_MAP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for structure MDG_BS_BP_MSGMAP</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Categoria de tabela de BAPIRETI p/objetos múltiplos</STEXT>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_BANCO_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados bancários para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 008</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_IR_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados de imposto para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 009</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_MESS_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mensagens de retorno</STEXT>
+       <INDEX> 010</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_TEL_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados de Telefones para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 011</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_CEL_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados de celulares para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 012</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_FAX_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados de fax para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 013</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_EMAIL_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados de email para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 014</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_CONTATOS_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados de contatos para suporte ao Portal do Fornecedor</STEXT>
+       <INDEX> 015</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
