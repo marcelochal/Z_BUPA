@@ -1,0 +1,16 @@
+{
+"BASEINFO":
+{
+"FROM":
+[
+"BUT000",
+"CVI_CUST_LINK",
+"CVI_VEND_LINK",
+"DFKKBPTAXNUM"
+],
+"ASSOCIATED":
+[],
+"BASE":
+[]
+}
+}

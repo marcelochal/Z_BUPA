@@ -13,9 +13,7 @@
    </DD02V>
    <DD03P_TABLE>
     <DD03P>
-     <TABNAME>ZBUPA_S_VMDS_VENDOR_LFA1</TABNAME>
      <FIELDNAME>LFA1</FIELDNAME>
-     <POSITION>0001</POSITION>
      <ROLLNAME>LFA1</ROLLNAME>
      <ADMINFIELD>0</ADMINFIELD>
      <DATATYPE>STRU</DATATYPE>
@@ -23,10 +21,7 @@
      <COMPTYPE>S</COMPTYPE>
     </DD03P>
     <DD03P>
-     <TABNAME>ZBUPA_S_VMDS_VENDOR_LFA1</TABNAME>
      <FIELDNAME>.INCLUDE</FIELDNAME>
-     <DDLANGUAGE>P</DDLANGUAGE>
-     <POSITION>0235</POSITION>
      <ADMINFIELD>0</ADMINFIELD>
      <PRECFIELD>ZBUPA_S_VMDS_VENDOR</PRECFIELD>
      <MASK>      S</MASK>
@@ -34,6 +29,200 @@
      <COMPTYPE>S</COMPTYPE>
     </DD03P>
    </DD03P_TABLE>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>2</LANGU>
+    <LANGU>3</LANGU>
+    <LANGU>4</LANGU>
+    <LANGU>5</LANGU>
+    <LANGU>6</LANGU>
+    <LANGU>7</LANGU>
+    <LANGU>8</LANGU>
+    <LANGU>9</LANGU>
+    <LANGU>A</LANGU>
+    <LANGU>B</LANGU>
+    <LANGU>C</LANGU>
+    <LANGU>D</LANGU>
+    <LANGU>E</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>G</LANGU>
+    <LANGU>H</LANGU>
+    <LANGU>I</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>K</LANGU>
+    <LANGU>L</LANGU>
+    <LANGU>M</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>O</LANGU>
+    <LANGU>Q</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+    <LANGU>T</LANGU>
+    <LANGU>U</LANGU>
+    <LANGU>V</LANGU>
+    <LANGU>W</LANGU>
+    <LANGU>X</LANGU>
+    <LANGU>Y</LANGU>
+    <LANGU>c</LANGU>
+    <LANGU>d</LANGU>
+    <LANGU>묩</LANGU>
+    <LANGU>뱋</LANGU>
+    <LANGU>쁩</LANGU>
+   </I18N_LANGS>
+   <DD02_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>供应商数据</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>2</DDLANGUAGE>
+     <DDTEXT>ข้อมูลผู้ขาย</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DDTEXT>공급업체 데이터</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>4</DDLANGUAGE>
+     <DDTEXT>Date furnizor</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>5</DDLANGUAGE>
+     <DDTEXT>Podatki dobavitelja</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>6</DDLANGUAGE>
+     <DDTEXT>Podaci o dobavljaču</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>7</DDLANGUAGE>
+     <DDTEXT>Vendor Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>8</DDLANGUAGE>
+     <DDTEXT>Vendor Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>9</DDLANGUAGE>
+     <DDTEXT>Vendor Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>A</DDLANGUAGE>
+     <DDTEXT>بيانات البائع</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>B</DDLANGUAGE>
+     <DDTEXT>נתוני ספק</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>C</DDLANGUAGE>
+     <DDTEXT>Data dodavatele</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Lieferantendaten</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>Vendor Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Données fournisseur</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>G</DDLANGUAGE>
+     <DDTEXT>Δεδομένα Προμηθευτή</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>H</DDLANGUAGE>
+     <DDTEXT>Szállítók adatai</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>I</DDLANGUAGE>
+     <DDTEXT>Dati fornitore</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>仕入先データ</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DDTEXT>Leverandørdata</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>L</DDLANGUAGE>
+     <DDTEXT>Dane dostawcy</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DDTEXT>供應商資料</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>Leveranciergegevens</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>O</DDLANGUAGE>
+     <DDTEXT>Leverandørdata</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>Q</DDLANGUAGE>
+     <DDTEXT>Dáta dodávateľa</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Данные поставщика</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Datos de proveedor</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>T</DDLANGUAGE>
+     <DDTEXT>Satıcı verileri</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>U</DDLANGUAGE>
+     <DDTEXT>Toimittajatiedot</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>V</DDLANGUAGE>
+     <DDTEXT>Leverantörsdata</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>W</DDLANGUAGE>
+     <DDTEXT>Данни доставчик</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>X</DDLANGUAGE>
+     <DDTEXT>Vendor Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>Y</DDLANGUAGE>
+     <DDTEXT>Vendor Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>c</DDLANGUAGE>
+     <DDTEXT>Vendor Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>d</DDLANGUAGE>
+     <DDTEXT>Podaci dobavljača</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>묩</DDLANGUAGE>
+     <DDTEXT>Vendor Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>뱋</DDLANGUAGE>
+     <DDTEXT>Vendor Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>쁩</DDLANGUAGE>
+     <DDTEXT>Vendor Data</DDTEXT>
+    </item>
+   </DD02_TEXTS>
   </asx:values>
  </asx:abap>
 </abapGit>

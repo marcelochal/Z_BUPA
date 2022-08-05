@@ -96,7 +96,7 @@ CLASS lcl_bupa001_test IMPLEMENTATION.
   METHOD zif_vendor_create.
 
     DATA:
-*      ls_lfa1                  TYPE lfa1,
+      ls_lfa1                  TYPE lfa1,
       lv_lifnr                 TYPE lifnr,
       ls_fornecedor            TYPE zpf_fornecedor,
       lt_banco_tab_expected    TYPE ty_t_zpf_banco,
@@ -142,7 +142,7 @@ CLASS lcl_bupa001_test IMPLEMENTATION.
     ls_fornecedor-smtp_addr   = |teste{ syst-timlo }@teste.com.br|.
     ls_fornecedor-stcd4       = |{ syst-timlo }{ syst-datlo }|.
     ls_fornecedor-stcd3       = |{ syst-datlo }{ syst-timlo }|.
-    ls_fornecedor-zterm       = |TB30|.
+    ls_fornecedor-zterm       = |TB00|. "Erro previsto uma vez que o Sertras manda essa condição errada!
 
     INSERT INITIAL LINE INTO lt_banco_tab_return
         ASSIGNING FIELD-SYMBOL(<fs_banco>) INDEX 1.
@@ -265,6 +265,17 @@ CLASS lcl_bupa001_test IMPLEMENTATION.
             act   = lt_return_return                " Data object with current value
             exp   = lt_return_return                " Data object with expected type
             msg   = |{ TEXT-003 } e_return | ).     " Description
+
+
+    SELECT SINGLE * FROM lfa1 INTO @ls_lfa1
+    WHERE stcd1 = @ls_fornecedor-stcd1.
+
+    CALL METHOD cl_abap_unit_assert=>assert_subrc
+      EXPORTING
+        exp   = 0                            " Expected return code, optional, if not zero
+        act   = sy-subrc                     " Return code of ABAP statements
+        msg   = |{ TEXT-003 } Fornecedor não criado! | " Description
+        level = if_aunit_constants=>critical. " Severity (TOLERABLE, >CRITICAL<, FATAL)
 
   ENDMETHOD.
 
@@ -407,6 +418,8 @@ CLASS lcl_bupa001_test IMPLEMENTATION.
 
 
   METHOD zif_vendor_update.
+
+    "Não está pronto pois não obtive tempo necessario apra criar o Cenario de teste! :-(
 
     DATA:
       i_fornecedor   TYPE zpf_fornecedor,

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOBJ>
+    <OBJCT>ZGROUP_01</OBJCT>
+    <FIEL1>ZGROUPING</FIEL1>
+    <OCLSS>ZBP</OCLSS>
+   </TOBJ>
+   <TOBJT>
+    <LANGU>P</LANGU>
+    <OBJECT>ZGROUP_01</OBJECT>
+    <TTEXT>Agrupamento de BP para area Fiscal</TTEXT>
+   </TOBJT>
+   <TOBJVORFLG>
+    <OBJCT>ZGROUP_01</OBJCT>
+   </TOBJVORFLG>
+  </asx:values>
+ </asx:abap>
+</abapGit>

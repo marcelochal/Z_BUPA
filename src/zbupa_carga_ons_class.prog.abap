@@ -245,11 +245,12 @@ CLASS lcl_bupa DEFINITION FINAL FRIENDS lcl_file lcl_messages lcl_alv.
           im_s_contactpersons TYPE ty_e_upload_layout
         RETURNING
           VALUE(r_result)     TYPE bus_ei_bupa_address_t,
-      fill_organization_name
+      fill_organization
         IMPORTING
-          im_v_razao_social TYPE any
+          im_v_razao_social   TYPE any
+          im_v_tipo_do_agente TYPE any
         RETURNING
-          VALUE(r_result)   TYPE bus_ei_struc_central_organ,
+          VALUE(r_result)     TYPE bus_ei_struc_central_organ,
       get_bp_from_data_base,
       get_bukrs_list,
       get_mestre_de_vendas, "RA 114
@@ -855,7 +856,8 @@ CLASS lcl_bupa IMPLEMENTATION .
 *--------------------------------+--------------------------------------
 *    Name data
 *----------------------------------------------------------------------
-      ls_cvis_ei_extern-partner-central_data-common-data-bp_organization = me->fill_organization_name( ls_saida-razao_social ).
+      ls_cvis_ei_extern-partner-central_data-common-data-bp_organization = me->fill_organization( EXPORTING im_v_razao_social   = ls_saida-razao_social
+                                                                                                            im_v_tipo_do_agente = ls_saida-tipo_do_agente ).
 
 *----------------------------------------------------------------------
 *    Business Partner Tax ID Data
@@ -867,7 +869,7 @@ CLASS lcl_bupa IMPLEMENTATION .
           i_taxtype    = me->co_taxtype_cnpj
         TABLES
           t_taxnumbers = lt_dfkkbptaxnum
-        exceptions
+        EXCEPTIONS
           not_found    = 1
           OTHERS       = 2.
 
@@ -894,7 +896,7 @@ CLASS lcl_bupa IMPLEMENTATION .
           i_taxtype    = me->co_taxtype_insc_estadual
         TABLES
           t_taxnumbers = lt_dfkkbptaxnum
-        exceptions
+        EXCEPTIONS
           not_found    = 1
           OTHERS       = 2.
 
@@ -1356,9 +1358,9 @@ CLASS lcl_bupa IMPLEMENTATION .
   ENDMETHOD.
 
 *&----------------------------------------------------------------------*
-*& METHOD FILL_ORGANIZATION_NAME
+*& METHOD FILL_ORGANIZATION
 *&----------------------------------------------------------------------*
-  METHOD fill_organization_name.
+  METHOD fill_organization.
 
     DATA:
       lt_text_tab TYPE TABLE OF char255,
@@ -1367,6 +1369,8 @@ CLASS lcl_bupa IMPLEMENTATION .
     FIELD-SYMBOLS:
       <fs_central_organ> TYPE any,
       <fs_text>          TYPE char255.
+
+    r_result-legalorg = im_v_tipo_do_agente.
 
     lv_text = im_v_razao_social.
 
@@ -1667,12 +1671,15 @@ CLASS lcl_bupa IMPLEMENTATION .
     CALL METHOD lcl_bupa=>set_commit( ).
 
 * Cria os contatos do BP
-    CALL METHOD me->create_contact
-      CHANGING
-        ch_s_bp_numbers = ch_s_bp_numbers.
-
+*Start  - Marcelo Alvares - MA004818 - RITM0070370 - 07.01.2020 18:57
+* Contacts is not necessary anymore
+*    CALL METHOD me->create_contact
+*      CHANGING
+*        ch_s_bp_numbers = ch_s_bp_numbers.
+*
 * Cria os relacionamentos do BP e Contatos
-    CALL METHOD me->bp_relationship_create( ch_s_bp_numbers ).
+*    CALL METHOD me->bp_relationship_create( ch_s_bp_numbers ).
+*END    - Marcelo Alvares - MA004818 - RITM0070370 - 07.01.2020 18:57
 
 * Get number of new BP´s
 *    LOOP AT me->it_bp_numbers ASSIGNING <fs_bp_numbers> WHERE bp_number IS INITIAL.

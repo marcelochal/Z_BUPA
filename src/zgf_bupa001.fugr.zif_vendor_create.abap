@@ -15,10 +15,11 @@
 * Version | Date      | Who                 |   What                 *
 *    2.00 | 28/10/18  | Ricardo Monte       |   Versão AGIR          *
 *    2.01 | 06/05/19  | Marcelo Alvares     |   Ajustes 1000001164   *
+*    2.02 | 26/03/20  | Hemerson Barbosa    |   SHDK907533           *
 **********************************************************************
-FUNCTION ZIF_VENDOR_CREATE.
+FUNCTION zif_vendor_create.
 *"----------------------------------------------------------------------
-*"*"Interface local:
+*"*"Local Interface:
 *"  IMPORTING
 *"     VALUE(I_FORNECEDOR) TYPE  ZPF_FORNECEDOR
 *"  EXPORTING
@@ -43,6 +44,18 @@ FUNCTION ZIF_VENDOR_CREATE.
     ls_roles        TYPE bus_ei_bupa_roles,
     lv_role         TYPE bu_role,
     lv_partner_guid TYPE bu_partner_guid.
+
+*Start  - Marcelo Alvares - MA004818 INC0114565 - 19.08.2019 17:30
+  go_bal_log = NEW lcl_log_create( ).
+  go_bal_log->add_msg_import_table( im_s_struc = i_fornecedor ).
+  go_bal_log->add_msg_import_table( im_t_table = i_banco_tab[] ).
+  go_bal_log->add_msg_import_table( im_t_table = i_ir_tab[] ).
+  go_bal_log->add_msg_import_table( im_t_table = e_tel_tab[] ).
+  go_bal_log->add_msg_import_table( im_t_table = e_cel_tab[] ).
+  go_bal_log->add_msg_import_table( im_t_table = e_fax_tab[] ).
+  go_bal_log->add_msg_import_table( im_t_table = e_email_tab[] ).
+  go_bal_log->add_msg_import_table( im_t_table = e_contatos_tab[] ).
+*END    - Marcelo Alvares - MA004818 INC0114565 - 19.08.2019 17:30
 
   " Move task I Insert to create BP and Vendor
   MOVE gc_object_task_insert TO:
@@ -86,7 +99,8 @@ FUNCTION ZIF_VENDOR_CREATE.
   " Block vendor
   MOVE abap_on TO:
     gs_cvis_ei_bp-vendor-central_data-central-data-sperr, " Central posting block
-    gs_cvis_ei_bp-vendor-central_data-central-data-sperm. " Centrally imposed purchasing block
+    gs_cvis_ei_bp-vendor-central_data-central-data-sperm, " Centrally imposed purchasing block
+    gs_cvis_ei_bp-vendor-central_data-central-data-zz_is_dbloq_por_wf.  "SHDK907533
 
   gs_cvis_ei_bp-partner-central_data-common-data-bp_organization-name1 = i_fornecedor-name1.
   gs_cvis_ei_bp-partner-central_data-common-data-bp_control-grouping   = i_fornecedor-ktokk.
@@ -255,6 +269,15 @@ FUNCTION ZIF_VENDOR_CREATE.
         event       = 'ZCREATED'.
 
   ENDIF.
+
+*Start  - Marcelo Alvares - MA004818 INC0114565 - 19.08.2019 17:30
+  go_bal_log->add_msg_return(
+    EXPORTING
+      im_t_mess_tab     = e_mess_tab[]
+      im_t_return       = e_return[]
+      im_t_return_map   = e_return_map[]  ).
+  go_bal_log->save( ).
+*END    - Marcelo Alvares - MA004818 INC0114565 - 19.08.2019 17:30
 
 
 ENDFUNCTION.

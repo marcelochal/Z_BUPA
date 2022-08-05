@@ -7,73 +7,93 @@ REPORT zbupa_carga_dados_banc_forn.
 
 TABLES: lfbk, sscrfields.
 
-SELECTION-SCREEN: FUNCTION KEY 1.
+CONSTANTS
+    co_parameter_id1 TYPE memoryid VALUE zcl_file_upload=>co_parameter_id1.
+
+
 SELECTION-SCREEN BEGIN OF BLOCK b011 WITH FRAME TITLE TEXT-t02.
-
+SELECTION-SCREEN: FUNCTION KEY 1.
 PARAMETERS:
-  rb_file RADIOBUTTON GROUP rb2 MODIF ID rb2 DEFAULT 'X'.
+  p_file  TYPE rlgrap-filename MEMORY ID co_parameter_id1 ##EXISTS.
 
-PARAMETERS:
-  p_file  TYPE rlgrap-filename MEMORY ID cc_parameter_id ##EXISTS.
+*SELECTION-SCREEN SKIP.
 
-SELECTION-SCREEN SKIP.
-PARAMETERS:
- rb_forn RADIOBUTTON GROUP rb2 MODIF ID rb2.
-
-SELECT-OPTIONS : s_forn  FOR  lfbk-lifnr.
+*SELECT-OPTIONS : s_forn  FOR  lfbk-lifnr.
 
 SELECTION-SCREEN SKIP.
 PARAMETERS:
   p_test           TYPE xtest   AS CHECKBOX DEFAULT abap_true.
 SELECTION-SCREEN END OF BLOCK b011.
 
-TYPES: BEGIN OF ty_e_upload_layout,
-         lifnr TYPE lifnr,      " Nº conta do fornecedor
-         banks TYPE banks,      " Código do país do banco
-         bankl TYPE bankk,      " Chave do banco
-         bankn TYPE bankn,      " Nº conta bancária
-         bkont TYPE bkont,      " Nº conta bancária
-         bvtyp TYPE bvtyp,      " Tipo de banco do parceiro
-         xezer TYPE xezer,      " Código: existe ordem de autorização de débito direto?
-         bkref TYPE bkref,      " Indicação de referência para os dados bancários
-         koinh TYPE koinh_fi,   " Nome do titular da conta
-       END OF ty_e_upload_layout,
+TYPES:
+  BEGIN OF ty_s_upload_layout,
+    lifnr           TYPE lifnr,          " Nº conta do fornecedor
+    bankdetailid    TYPE bu_bkvid,       " Bank details ID
+    bank_ctry       TYPE banks,          " Código do país do banco
+    bank_key        TYPE bankk,          " Chave do banco
+    bank_acct       TYPE bankn,          " Nº conta bancária
+    ctrl_key        TYPE bkont,          " Bank Control Key
+    bankaccountname TYPE bu_bankaccname, " Name of Bank Account
+  END OF ty_s_upload_layout,
 
-       BEGIN OF ty_but000,
-         partner      TYPE but000-partner,
-         partner_guid TYPE but000-partner_guid,
-         vendor	      TYPE cvi_vend_link-vendor,
-       END OF ty_but000.
+  ty_t_upload_layout TYPE STANDARD TABLE OF ty_s_upload_layout
+      WITH NON-UNIQUE SORTED KEY key_lifnr  COMPONENTS lifnr bankdetailid,
 
+  BEGIN OF ty_s_but000,
+    partner      TYPE but000-partner,
+    partner_guid TYPE but000-partner_guid,
+    vendor       TYPE cvi_vend_link-vendor,
+    name1_text   TYPE but000-name1_text,
+  END OF ty_s_but000,
+  ty_t_but000 TYPE STANDARD TABLE OF ty_s_but000
+    WITH DEFAULT KEY WITH NON-UNIQUE SORTED KEY but000_sec_key COMPONENTS partner vendor.
 
 DATA:
-  gt_lfbk          TYPE TABLE OF lfbk,
-  gt_cvi_vend_link TYPE TABLE OF cvi_vend_link,
-  gt_but000        TYPE STANDARD TABLE OF ty_but000       WITH NON-UNIQUE SORTED KEY but000_sec_key COMPONENTS partner vendor,
-  gt_table_excel   TYPE STANDARD TABLE OF ty_e_upload_layout WITH NON-UNIQUE SORTED KEY excel_sec_key COMPONENTS lifnr.
+  gt_but000      TYPE ty_t_but000,
+  gt_table_excel TYPE ty_t_upload_layout,
+  go_file        TYPE REF TO zcl_file_upload.
 
 
 INCLUDE zbupa_carga_dados_banc_forn_f1.
 
-AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_file.
-  PERFORM select_file USING p_file.
+INITIALIZATION.
+  sscrfields = zcl_file_upload=>set_sscrtexts_export_model( ).
 
-AT SELECTION-SCREEN.
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_file.
+  CALL METHOD zcl_file_upload=>select_file_open_dialog
+    RECEIVING
+      r_filename = p_file.
+
+
+AT SELECTION-SCREEN ON BLOCK b011.
   CASE sscrfields-ucomm.
     WHEN'FC01'.
-*      CALL METHOD lcl_file=>export_model.
+      CALL METHOD zcl_file_upload=>export_model
+        EXPORTING
+          im_model = gt_table_excel.
+
   ENDCASE.
 
 START-OF-SELECTION.
 
-  CASE abap_on.
-    WHEN rb_file.
-      PERFORM:
-      upload,
-      ler_excel.
+  CREATE OBJECT go_file
+    EXPORTING
+      im_v_file_path = p_file.
 
-    WHEN rb_forn.
-      PERFORM:
-      change_bkvid.
+  CALL METHOD go_file->upload_file
+    EXPORTING
+      im_v_use_abapxlsx     = abap_off
+    CHANGING
+      ch_tab_converted_data = gt_table_excel
+    EXCEPTIONS
+      conversion_failed     = 1
+      upload_date_not_found = 2
+      OTHERS                = 3.
 
-  ENDCASE.
+  IF sy-subrc NE 0.
+    MESSAGE ID sy-msgid TYPE 'S' NUMBER sy-msgno
+      WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 DISPLAY LIKE 'E'.
+    STOP.
+  ENDIF.
+
+  PERFORM ler_excel.

@@ -38,7 +38,14 @@ CONSTANTS:
   gc_pessoa_fisica_nacf       TYPE lfb1-fdgrv         VALUE 'NACF',
   gc_pessoa_juridica_nacj     TYPE lfb1-fdgrv         VALUE 'NACJ',
   gc_bp_category_person       TYPE bu_type            VALUE '1',
-  gc_bp_category_organization TYPE bu_type            VALUE '2'.
+  gc_bp_category_organization TYPE bu_type            VALUE '2',
+  gc_zterm_tb30               TYPE dzterm             VALUE 'TB30'. " Default Terms of Payment Key
+
+CLASS:
+    lcl_bal_log     DEFINITION DEFERRED,
+    lcl_log_create  DEFINITION DEFERRED,
+    lcl_log_update  DEFINITION DEFERRED,
+    lcl_log_display DEFINITION DEFERRED.
 
 
 DATA:
@@ -53,12 +60,7 @@ DATA:
   gv_partner_ret      TYPE bu_partner,
   gs_cvis_ei_extern   TYPE cvis_ei_extern,
   gs_cvis_ei_bp       TYPE cvis_ei_extern,
-  gs_cvis_ei_contact  TYPE cvis_ei_extern.
+  gs_cvis_ei_contact  TYPE cvis_ei_extern,
+  go_bal_log          TYPE REF TO lcl_bal_log.
 
-*DEFINE _inc.
-*  ADD 1 TO &1.
-*END-OF-DEFINITION.
-*
-*DEFINE _dec.
-*  SUBTRACT 1 FROM &1.
-*END-OF-DEFINITION.
+INCLUDE lzgf_bupa001d01.

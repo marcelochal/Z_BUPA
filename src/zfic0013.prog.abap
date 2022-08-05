@@ -139,8 +139,8 @@ CLASS lcl_fic0013 DEFINITION INHERITING FROM zcl_bp_extend_vendor FINAL .
     METHODS:
       on_link_click FOR EVENT link_click OF cl_salv_events_table
         IMPORTING
-            row
-            column.
+          row
+          column.
 
 ENDCLASS.
 
@@ -241,7 +241,12 @@ CLASS lcl_fic0013 IMPLEMENTATION .
       lt_bp_key    TYPE ty_t_bp_key,
       lt_bp_data   TYPE ty_t_bp,
       lt_r_lifnr   TYPE ty_r_lifnr,
-      lt_r_partner TYPE ty_r_partner.
+      lt_r_partner TYPE ty_r_partner,
+
+*Indra – INC0258963 – 27/05/2022 – Início
+      lr_fupn      TYPE RANGE OF bu_role,
+      ls_fupn      LIKE LINE OF lr_fupn.
+*Indra – INC0258963 – 27/05/2022 – Fim
 
     super->constructor( ).
 
@@ -329,6 +334,29 @@ CLASS lcl_fic0013 IMPLEMENTATION .
             im_t_bp_key  = lt_bp_key
           IMPORTING
             ex_t_bp_data = lt_bp_data.
+
+*Indra – INC0258963 – 27/05/2022 – Início
+        ls_fupn-sign = 'I'.
+        ls_fupn-option = 'EQ'.
+        ls_fupn-low = 'FLVN00'.
+        APPEND ls_fupn TO lr_fupn.
+
+        ls_fupn-low = 'FLVN01'.
+        APPEND ls_fupn TO lr_fupn.
+        CLEAR ls_fupn.
+
+        LOOP AT lt_bp_data ASSIGNING FIELD-SYMBOL(<lfs_bp>).
+          CLEAR <lfs_bp>-partner_bus-central_data-role-current_state.
+          LOOP AT <lfs_bp>-partner_bus-central_data-role-roles INTO DATA(ls_role).
+            IF ls_role-data_key NOT IN lr_fupn.
+              DELETE <lfs_bp>-partner_bus-central_data-role-roles INDEX sy-tabix.
+            ENDIF.
+          ENDLOOP.
+
+          CLEAR ls_role.
+        ENDLOOP.
+        UNASSIGN <lfs_bp>.
+*Indra – INC0258963 – 27/05/2022 – Início
 
         MOVE-CORRESPONDING lt_bp_data TO me->t_bp_data.
 

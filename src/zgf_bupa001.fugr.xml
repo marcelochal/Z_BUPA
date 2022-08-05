@@ -4,6 +4,7 @@
   <asx:values>
    <AREAT>Interface Portal SERTRAS &lt;-&gt; BP Vendor</AREAT>
    <INCLUDES>
+    <SOBJ_NAME>LZGF_BUPA001D01</SOBJ_NAME>
     <SOBJ_NAME>LZGF_BUPA001F01</SOBJ_NAME>
     <SOBJ_NAME>LZGF_BUPA001T99</SOBJ_NAME>
     <SOBJ_NAME>LZGF_BUPA001TOP</SOBJ_NAME>
@@ -81,73 +82,61 @@
        <PARAMETER>I_FORNECEDOR</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Mestre de fornecedores (parte geral)</STEXT>
-       <INDEX> 001</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_LIFNR</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Nº conta do fornecedor</STEXT>
-       <INDEX> 002</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_RETURN_MAP</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Table type for structure MDG_BS_BP_MSGMAP</STEXT>
-       <INDEX> 003</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_RETURN</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Categoria de tabela de BAPIRETI p/objetos múltiplos</STEXT>
-       <INDEX> 004</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>I_BANCO_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados bancários para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 005</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>I_IR_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados de imposto para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 006</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_MESS_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Estrutura de mensagem</STEXT>
-       <INDEX> 007</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_TEL_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados de Telefones para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 008</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_CEL_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados de celulares para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 009</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_FAX_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados de fax para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 010</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_EMAIL_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados de email para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 011</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_CONTATOS_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados de contatos para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 012</INDEX>
       </RSFDO>
      </DOCUMENTATION>
     </item>
@@ -179,19 +168,16 @@
        <PARAMETER>I_LIFNR</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Nº conta do fornecedor</STEXT>
-       <INDEX> 001</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>I_CPF_CNPJ</PARAMETER>
        <KIND>P</KIND>
        <STEXT>CPF/CNPJ</STEXT>
-       <INDEX> 002</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_MESS_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Mensagens de retorno</STEXT>
-       <INDEX> 003</INDEX>
       </RSFDO>
      </DOCUMENTATION>
     </item>
@@ -253,55 +239,46 @@
        <PARAMETER>I_CPF_CNPJ</PARAMETER>
        <KIND>P</KIND>
        <STEXT>CPF/CNPJ</STEXT>
-       <INDEX> 001</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_FORNECEDOR</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Mestre de fornecedores (parte geral)</STEXT>
-       <INDEX> 002</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_BANCO_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados bancários para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 003</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_IR_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados de imposto para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 004</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_MESS_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Mensagens de retorno</STEXT>
-       <INDEX> 005</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_TEL_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados Tel Fixo e celular para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 006</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_FAX_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados FAX e celular para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 007</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_EMAIL_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados email para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 008</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_CONTATOS_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Mestre de clientes - pessoas de contato</STEXT>
-       <INDEX> 009</INDEX>
       </RSFDO>
      </DOCUMENTATION>
     </item>
@@ -390,91 +367,76 @@
        <PARAMETER>I_FORNECEDOR</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Mestre de fornecedores (parte geral)</STEXT>
-       <INDEX> 001</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>I_FORNECEDORX</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados fornecedor para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 002</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>I_LIFNR</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Nº conta do fornecedor</STEXT>
-       <INDEX> 003</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>I_CPF_CNPJ</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Nº ID fiscal 1</STEXT>
-       <INDEX> 004</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_LIFNR</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Nº conta do fornecedor</STEXT>
-       <INDEX> 005</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_RETURN_MAP</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Table type for structure MDG_BS_BP_MSGMAP</STEXT>
-       <INDEX> 006</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_RETURN</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Categoria de tabela de BAPIRETI p/objetos múltiplos</STEXT>
-       <INDEX> 007</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>I_BANCO_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados bancários para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 008</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>I_IR_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados de imposto para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 009</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_MESS_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Mensagens de retorno</STEXT>
-       <INDEX> 010</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_TEL_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados de Telefones para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 011</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_CEL_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados de celulares para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 012</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_FAX_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados de fax para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 013</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_EMAIL_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados de email para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 014</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>E_CONTATOS_TAB</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Dados de contatos para suporte ao Portal do Fornecedor</STEXT>
-       <INDEX> 015</INDEX>
       </RSFDO>
      </DOCUMENTATION>
     </item>

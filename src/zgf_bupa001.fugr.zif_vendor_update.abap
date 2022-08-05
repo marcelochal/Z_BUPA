@@ -15,8 +15,9 @@
 * Version | Date      | Who                 |   What                 *
 *    2.00 | 28/10/18  | Ricardo Monte       |   Versão AGIR          *
 *    2.01 | 06/05/19  | Marcelo Alvares     |   Ajustes 1000001164   *
+*    2.02 | 26/03/20  | Hemerson Barbosa    |   SHDK907533           *
 **********************************************************************
-FUNCTION ZIF_VENDOR_UPDATE.
+FUNCTION zif_vendor_update.
 *"----------------------------------------------------------------------
 *"*"Interface local:
 *"  IMPORTING
@@ -52,6 +53,20 @@ FUNCTION ZIF_VENDOR_UPDATE.
     l_bukrs_model_oth    TYPE bukrs,
     l_ekorg_model_oth    TYPE ekorg.
 
+*Start  - Marcelo Alvares - MA004818 INC0114565 - 19.08.2019 17:30
+  go_bal_log = NEW lcl_log_update( ).
+  go_bal_log->add_msg_import_table( im_s_struc = i_fornecedor ).
+  go_bal_log->add_msg_import_table( im_s_struc = i_fornecedorx ).
+  go_bal_log->add_msg_import_table( im_v_data  = i_lifnr ).
+  go_bal_log->add_msg_import_table( im_v_data  = i_cpf_cnpj ).
+  go_bal_log->add_msg_import_table( im_t_table = i_banco_tab[] ).
+  go_bal_log->add_msg_import_table( im_t_table = i_ir_tab[] ).
+  go_bal_log->add_msg_import_table( im_t_table = e_tel_tab[] ).
+  go_bal_log->add_msg_import_table( im_t_table = e_cel_tab[] ).
+  go_bal_log->add_msg_import_table( im_t_table = e_fax_tab[] ).
+  go_bal_log->add_msg_import_table( im_t_table = e_email_tab[] ).
+  go_bal_log->add_msg_import_table( im_t_table = e_contatos_tab[] ).
+*END    - Marcelo Alvares - MA004818 INC0114565 - 19.08.2019 17:30
 
   "Encontra o nr do fornecedor (e_lifnr)
   IF i_lifnr <> '' AND i_lifnr <> '0000000000'.
@@ -121,7 +136,6 @@ FUNCTION ZIF_VENDOR_UPDATE.
 
   gs_cvis_ei_extern-partner-header-object_task     =  gc_object_task_update.
 
-
   PERFORM fill_inscricoes
       USING    i_fornecedorx
                i_fornecedor
@@ -177,6 +191,15 @@ FUNCTION ZIF_VENDOR_UPDATE.
 
   ENDLOOP.
 
+  " Block vendor
+  MOVE abap_on TO:                                                                                      "SHDK907533
+    gs_cvis_ei_extern-vendor-central_data-central-data-sperr, " Central posting block                   "SHDK907533
+    gs_cvis_ei_extern-vendor-central_data-central-datax-sperr,                                          "SHDK907533
+    gs_cvis_ei_extern-vendor-central_data-central-data-sperm, " Centrally imposed purchasing block      "SHDK907533
+    gs_cvis_ei_extern-vendor-central_data-central-datax-sperm,                                          "SHDK907533
+    gs_cvis_ei_extern-vendor-central_data-central-data-zz_is_dbloq_por_wf,                              "SHDK907533
+    gs_cvis_ei_extern-vendor-central_data-central-datax-zz_is_dbloq_por_wf.                             "SHDK907533
+
   "Valida os dados
   CLEAR: e_return_map, e_return.
 
@@ -215,8 +238,34 @@ FUNCTION ZIF_VENDOR_UPDATE.
       ls_msg-texto = 'Fornecedor atualizado'.
       APPEND ls_msg TO e_mess_tab.
 
+      gv_key = gs_cvis_ei_extern-partner-header-object_instance-bpartner.
+
+      DATA: lt_ic TYPE TABLE OF swr_cont,
+            ls_ic LIKE LINE OF lt_ic.
+
+      ls_ic-element = 'ISFORNEMODIF'.
+      ls_ic-value = 'X'.
+      APPEND ls_ic TO lt_ic.
+
+      CALL FUNCTION 'SAP_WAPI_CREATE_EVENT'
+        EXPORTING
+          object_type     = 'BUS1006'
+          object_key      = gv_key
+          event           = 'ZCHANGED'
+        TABLES
+          input_container = lt_ic.
     ENDIF.
 
   ENDIF.
+
+*Start  - Marcelo Alvares - MA004818 INC0114565 - 19.08.2019 17:30
+  CALL METHOD go_bal_log->add_msg_return
+    EXPORTING
+      im_t_mess_tab   = e_mess_tab[]
+      im_t_return     = e_return[]
+      im_t_return_map = e_return_map[].
+
+  CALL METHOD go_bal_log->save( ).
+*END    - Marcelo Alvares - MA004818 INC0114565 - 19.08.2019 17:30
 
 ENDFUNCTION.

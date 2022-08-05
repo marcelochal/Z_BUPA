@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZBP99</TCODE>
+    <CINFO>Ag==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZBP99</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>P</SPRSL>
+    <TCODE>ZBP99</TCODE>
+    <TTEXT>Atualiz.em massa mestre de PN</TTEXT>
+   </TSTCT>
+   <TSTCP>
+    <TCODE>ZBP99</TCODE>
+    <PARAM>/*MASS MASSSCREEN-OBJECT=BUS1006;MASSSCREEN-SKIPSCREEN=X;</PARAM>
+   </TSTCP>
+   <I18N_TPOOL>
+    <TSTCT>
+     <SPRSL>1</SPRSL>
+     <TTEXT>客户主文件大量维护</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>2</SPRSL>
+     <TTEXT>การปรับปรุงข้อมูลหลักลูกค้าจำนวนมาก</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>3</SPRSL>
+     <TTEXT>고객 마스터 일괄 유지보수</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>4</SPRSL>
+     <TTEXT>Întreţinere în masă registru clienţi</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>5</SPRSL>
+     <TTEXT>Mas.vzdr.osn.pod.stran.</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>6</SPRSL>
+     <TTEXT>Masovno održavanje mat.sl.kupca</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>7</SPRSL>
+     <TTEXT>Senggaraan berat induk pelanggan</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>8</SPRSL>
+     <TTEXT>Масове ведення осн.даних клієнта</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>9</SPRSL>
+     <TTEXT>Kliendi püsiandmete hulgihaldus</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>A</SPRSL>
+     <TTEXT>صيانةشاملة لسجل بيانات رئيسة للعملاء</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>B</SPRSL>
+     <TTEXT>אחזקה מסיבית של רשומת אב לקוח</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>C</SPRSL>
+     <TTEXT>Hromadná údržba km.soub.zákazníků</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>D</SPRSL>
+     <TTEXT>Massenpflege Kundenstamm</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>E</SPRSL>
+     <TTEXT>Customer master mass maintenance</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>F</SPRSL>
+     <TTEXT>Gestion en masse fiche client</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>G</SPRSL>
+     <TTEXT>Μαζική συντήρ.βασ.αρχείου πελάτη</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>H</SPRSL>
+     <TTEXT>Vevőtörzs tömeges karbantartása</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>I</SPRSL>
+     <TTEXT>Agg. di massa anagr. cliente</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>J</SPRSL>
+     <TTEXT>得意先マスタ一括更新</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>K</SPRSL>
+     <TTEXT>Massevedligehold kundestamdata</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>L</SPRSL>
+     <TTEXT>Opracowanie masowe danych podst. kl.</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>M</SPRSL>
+     <TTEXT>客戶主檔大量維護</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>N</SPRSL>
+     <TTEXT>Massaverzorging klantstam</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>O</SPRSL>
+     <TTEXT>Massevedlikehold - kundestamdata</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>Q</SPRSL>
+     <TTEXT>Hromadná údržba kmeň.súb.zákazníka</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>R</SPRSL>
+     <TTEXT>Массовое ведение ОснЗаписейКлиентов</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>S</SPRSL>
+     <TTEXT>Actual.colectiva maestro clientes</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>T</SPRSL>
+     <TTEXT>Müşteri ana verileri toplu bakımı</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>U</SPRSL>
+     <TTEXT>Joukkoylläpito: asiakasperustiedot</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>V</SPRSL>
+     <TTEXT>Massunderhåll kundbasdata</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>W</SPRSL>
+     <TTEXT>Масово въвежд.осн.запис на клиент</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>X</SPRSL>
+     <TTEXT>Kliento kortelės masinis tvarkymas</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>Y</SPRSL>
+     <TTEXT>Klientu pamatsar. masveida apkope</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>c</SPRSL>
+     <TTEXT>Actual.en massa mestre clients</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>d</SPRSL>
+     <TTEXT>Masovno održavanje liste kupca</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>묩</SPRSL>
+     <TTEXT>ग्राहक मास्टर सामूहिक रखरखाव</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>뱋</SPRSL>
+     <TTEXT>Тұтынушы нег.жазб.жаппай жүргізу</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>쁩</SPRSL>
+     <TTEXT>Khai báo hàng loạt k.h chính</TTEXT>
+    </TSTCT>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

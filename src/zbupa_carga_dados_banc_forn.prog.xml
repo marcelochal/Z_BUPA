@@ -11,9 +11,21 @@
    </PROGDIR>
    <TPOOL>
     <item>
+     <ID>I</ID>
+     <KEY>B10</KEY>
+     <ENTRY>Baixar arquivo modelo</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B11</KEY>
+     <ENTRY>Modelo</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
      <ID>R</ID>
-     <ENTRY>Dados bancários fornecedor - BP</ENTRY>
-     <LENGTH>31</LENGTH>
+     <ENTRY>Carga de coordenadas bancárias do PN</ENTRY>
+     <LENGTH>36</LENGTH>
     </item>
     <item>
      <ID>S</ID>
@@ -21,12 +33,6 @@
      <ENTRY>.</ENTRY>
      <LENGTH>20</LENGTH>
      <SPLIT>D</SPLIT>
-    </item>
-    <item>
-     <ID>S</ID>
-     <KEY>P_FORN</KEY>
-     <ENTRY>Execução com lista abaixo</ENTRY>
-     <LENGTH>33</LENGTH>
     </item>
     <item>
      <ID>S</ID>

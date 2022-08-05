@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SHLP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD30V>
+    <SHLPNAME>ZBUPA_ALL_TAX</SHLPNAME>
+    <DDLANGUAGE>P</DDLANGUAGE>
+    <DDTEXT>Parceiro de negócios SAP: pesquisa de detalhes Fiscais</DDTEXT>
+    <ISSIMPLE>X</ISSIMPLE>
+    <SELMETHOD>BUT000</SELMETHOD>
+    <SELMTYPE>T</SELMTYPE>
+    <DIALOGTYPE>D</DIALOGTYPE>
+   </DD30V>
+   <DD32P_TABLE>
+    <DD32P>
+     <SHLPNAME>ZBUPA_ALL_TAX</SHLPNAME>
+     <FIELDNAME>PARTNER_GUID</FIELDNAME>
+     <FLPOSITION>0001</FLPOSITION>
+     <ROLLNAME>BU_PARTNER_GUID</ROLLNAME>
+     <SHLPOUTPUT>X</SHLPOUTPUT>
+     <SHLPLISPOS>01</SHLPLISPOS>
+     <SCRLEN3>25</SCRLEN3>
+    </DD32P>
+   </DD32P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

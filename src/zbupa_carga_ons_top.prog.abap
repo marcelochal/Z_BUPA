@@ -281,7 +281,7 @@ TYPES :
   BEGIN OF ty_e_bp,
     codigo                TYPE cmds_ei_instance-kunnr,
     sigla_do_agente       TYPE bus_ei_struc_central-searchterm1,
-    tipo_do_agente        TYPE c LENGTH 05 , "Sem uso
+    tipo_do_agente        TYPE c LENGTH 05 ,
     razao_social          TYPE c LENGTH 250,
     cnpj                  TYPE bus_ei_struc_bapitax-taxnumber,
     inscricao_estadual    TYPE bus_ei_struc_bapitax-taxnumber,

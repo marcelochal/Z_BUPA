@@ -3,17 +3,17 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <PROGDIR>
-    <NAME>ZIF_VENDOR_CREATE_TOP</NAME>
+    <NAME>ZBUPA_0003_TOP</NAME>
     <SUBC>I</SUBC>
-    <APPL>S</APPL>
+    <RSTAT>K</RSTAT>
     <RLOAD>P</RLOAD>
     <UCCHECK>X</UCCHECK>
    </PROGDIR>
    <TPOOL>
     <item>
      <ID>R</ID>
-     <ENTRY>Include ZIF_VENDOR_CREATE_TOP</ENTRY>
-     <LENGTH>29</LENGTH>
+     <ENTRY>Include ZBUPA_0002_TOP</ENTRY>
+     <LENGTH>22</LENGTH>
     </item>
    </TPOOL>
   </asx:values>

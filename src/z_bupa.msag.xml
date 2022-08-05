@@ -114,7 +114,7 @@
      <SPRSL>P</SPRSL>
      <ARBGB>Z_BUPA</ARBGB>
      <MSGNR>017</MSGNR>
-     <TEXT>Empresa &amp;1 não é valida como modelo para o fornecedor &amp;2</TEXT>
+     <TEXT>Empresa &amp;1 não é válida como modelo para o fornecedor &amp;2</TEXT>
     </T100>
     <T100>
      <SPRSL>P</SPRSL>
@@ -150,7 +150,7 @@
      <SPRSL>P</SPRSL>
      <ARBGB>Z_BUPA</ARBGB>
      <MSGNR>023</MSGNR>
-     <TEXT>Nenhuma Organização de compras válida para extender.</TEXT>
+     <TEXT>Nenhuma Organização de compras válida para estender.</TEXT>
     </T100>
     <T100>
      <SPRSL>P</SPRSL>
@@ -168,7 +168,7 @@
      <SPRSL>P</SPRSL>
      <ARBGB>Z_BUPA</ARBGB>
      <MSGNR>026</MSGNR>
-     <TEXT>Não foi selecionado nenhuma empresa válida para extender.</TEXT>
+     <TEXT>Não foi selecionado nenhuma empresa válida para estender.</TEXT>
     </T100>
     <T100>
      <SPRSL>P</SPRSL>
@@ -224,370 +224,152 @@
      <MSGNR>035</MSGNR>
      <TEXT>Extensão para o fornecedor &amp;1 com erros!</TEXT>
     </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>036</MSGNR>
+     <TEXT>Verificação sem erros! o PN será criado.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>037</MSGNR>
+     <TEXT>O PN &amp;1 ( &amp;2 ) já cadastrado.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>038</MSGNR>
+     <TEXT>Parceiro de negócios &amp;1 &amp;2 criado com sucesso!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>039</MSGNR>
+     <TEXT>PN &amp;1 criado com sucesso! Visão fornecedor não criado, Ver MDS_PPO2!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>040</MSGNR>
+     <TEXT>A Org. Vendas &amp;1 não é valida como modelo para o Cliente &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>041</MSGNR>
+     <TEXT>Org. Vendas &amp;1 de destino é igual &amp;2 de origem. Favor verificar</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>042</MSGNR>
+     <TEXT>Org. Vendas de destino preenchida. Favor indicar a de origem.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>043</MSGNR>
+     <TEXT>Org. Vendas de origem preenchida. Favor indicar a de destino.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>044</MSGNR>
+     <TEXT>Empresa &amp;1 não é válida como modelo para o Cliente &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>045</MSGNR>
+     <TEXT>Favor indicar um cliente válido para estender</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>046</MSGNR>
+     <TEXT>Favor indicar Empresa ou Org. Vendas válida como dados de origem.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>047</MSGNR>
+     <TEXT>Cliente &amp;1 foi estendido para a Org. Vendas &amp;2 com sucesso.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>048</MSGNR>
+     <TEXT>ERRO ao estender Cliente &amp;1 para a Org. Vendas &amp;2. Ver MDS_PPO2!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>049</MSGNR>
+     <TEXT>Extensão para o Cliente &amp;1 realizada com sucesso!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>050</MSGNR>
+     <TEXT>Extensão para o Cliente &amp;1 com erros!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>051</MSGNR>
+     <TEXT>Não foi encontrado nenhum cliente válido</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>052</MSGNR>
+     <TEXT>A organização de vendas &amp;1 já existe no cliente &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>053</MSGNR>
+     <TEXT>Simulação de extensão para o cliente &amp;1 realizada com sucesso!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>054</MSGNR>
+     <TEXT>Simulação de extensão para o cliente &amp;1 com erros!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>055</MSGNR>
+     <TEXT>Cliente &amp;1 foi estendido para a empresa &amp;2 com sucesso.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>056</MSGNR>
+     <TEXT>ERRO ao estender Cliente &amp;1 para a empresa &amp;2. Ver MDS_PPO2!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>057</MSGNR>
+     <TEXT>Não existe Cliente válido para o Parceiro de negócios &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>058</MSGNR>
+     <TEXT>Para formas de pagamento &amp;, informar os dados bancários! Empresa &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>Z_BUPA</ARBGB>
+     <MSGNR>059</MSGNR>
+     <TEXT>Ocorreu um exceção do tipo &amp;1</TEXT>
+    </T100>
    </T100>
    <LONGTEXTS>
-    <item>
-     <DOKIL>
-      <ID>NA</ID>
-      <OBJECT>Z_BUPA005</OBJECT>
-      <LANGU>P</LANGU>
-      <TYP>E</TYP>
-      <VERSION>0001</VERSION>
-      <MASTERLANG>X</MASTERLANG>
-      <TXTLINES>00020</TXTLINES>
-     </DOKIL>
-     <HEAD>
-      <TDOBJECT>DOKU</TDOBJECT>
-      <TDNAME>Z_BUPA005</TDNAME>
-      <TDID>NA</TDID>
-      <TDSPRAS>P</TDSPRAS>
-      <TDFORM>S_DOCU_SHOW</TDFORM>
-      <TDSTYLE>S_DOCUS1</TDSTYLE>
-      <TDVERSION>00001</TDVERSION>
-      <TDLINESIZE>072</TDLINESIZE>
-     </HEAD>
-     <LINES>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-       <TDLINE>&amp;CAUSE&amp;</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>O Dígito Verificador da Agência / Conta Corrente é invalido ou menor que</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>2 caracteres.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>Verifique o ID de dados bancários &amp;SYST-MSGV1&amp; da tela de dados</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>Bancários do Parceiro de Negócios.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-       <TDLINE>Como é verificado?</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>A verificação do digito verificador está ativada para o banco .</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>O campo chave de controle de bancos deve conter na primeira posição o</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>digito verificador da agencia bancaria, na segunda posição deve conter o</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>digito verificar da conta bancaria.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-       <TDLINE>Procedimento</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>O Dígito Verificador da Agência / Conta Corrente Código adotado pelo</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>Banco responsável pela conta corrente, para verificação da autenticidade</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>do par Código da Agência / Número da Conta Corrente.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U2</TDFORMAT>
-       <TDLINE>Exemplo para casos de 2 digitos</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>Para os Bancos que se utilizam de duas posições para o Dígito</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>Verificador do Número da Conta Corrente, preencher este campo com a 2ª</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>posição deste dígito.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>Número C/C = 45981-36</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>Neste caso -&gt; Dígito Verificador da Ag/Conta = 6</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-       <TDLINE>&amp;SYS_ADMIN&amp;</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>#ERROR &amp;SYST-MSGV4&amp;</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-      </TLINE>
-     </LINES>
-    </item>
-    <item>
-     <DOKIL>
-      <ID>NA</ID>
-      <OBJECT>Z_BUPA006</OBJECT>
-      <LANGU>P</LANGU>
-      <TYP>E</TYP>
-      <VERSION>0002</VERSION>
-      <MASTERLANG>X</MASTERLANG>
-      <TXTLINES>00020</TXTLINES>
-     </DOKIL>
-     <HEAD>
-      <TDOBJECT>DOKU</TDOBJECT>
-      <TDNAME>Z_BUPA006</TDNAME>
-      <TDID>NA</TDID>
-      <TDSPRAS>P</TDSPRAS>
-      <TDFORM>S_DOCU_SHOW</TDFORM>
-      <TDSTYLE>S_DOCUS1</TDSTYLE>
-      <TDVERSION>00002</TDVERSION>
-      <TDLINESIZE>072</TDLINESIZE>
-     </HEAD>
-     <LINES>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-       <TDLINE>&amp;CAUSE&amp;</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>O Dígito Verificador da Agência / Conta Corrente é invalido ou menor que</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>2 caracteres.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>Verifique o ID de dados bancários &amp;SYST-MSGV1&amp; da tela de dados</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>Bancários do Parceiro de Negócios.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-       <TDLINE>Como é verificado?</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>A verificação do digito verificador está ativada para o banco .</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>O campo chave de controle de bancos deve conter na primeira posição o</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>digito verificador da agencia bancaria, na segunda posição deve conter o</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>digito verificar da conta bancaria.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-       <TDLINE>Procedimento</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>O Dígito Verificador da Agência / Conta Corrente Código adotado pelo</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>Banco responsável pela conta corrente, para verificação da autenticidade</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>do par Código da Agência / Número da Conta Corrente.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U2</TDFORMAT>
-       <TDLINE>Exemplo para casos de 2 digitos</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>Para os Bancos que se utilizam de duas posições para o Dígito</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>Verificador do Número da Conta Corrente, preencher este campo com a 2ª</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>posição deste dígito.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>Número C/C = 45981-36</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>Neste caso -&gt; Dígito Verificador da Ag/Conta = 6</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-       <TDLINE>&amp;SYS_ADMIN&amp;</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>#ERROR &amp;SYST-MSGV4&amp;</TDLINE>
-      </TLINE>
-     </LINES>
-    </item>
-    <item>
-     <DOKIL>
-      <ID>NA</ID>
-      <OBJECT>Z_BUPA006</OBJECT>
-      <LANGU>E</LANGU>
-      <TYP>E</TYP>
-      <VERSION>0002</VERSION>
-      <TXTLINES>00020</TXTLINES>
-     </DOKIL>
-     <HEAD>
-      <TDOBJECT>DOKU</TDOBJECT>
-      <TDNAME>Z_BUPA006</TDNAME>
-      <TDID>NA</TDID>
-      <TDSPRAS>E</TDSPRAS>
-      <TDFORM>S_DOCU_SHOW</TDFORM>
-      <TDSTYLE>S_DOCUS1</TDSTYLE>
-      <TDVERSION>00002</TDVERSION>
-      <TDLINESIZE>072</TDLINESIZE>
-     </HEAD>
-     <LINES>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-       <TDLINE>&amp;CAUSE&amp;</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>O Dígito Verificador da Agência / Conta Corrente é invalido ou menor que</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>2 caracteres.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>Verifique o ID de dados bancários &amp;SYST-MSGV1&amp; da tela de dados</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>Bancários do Parceiro de Negócios.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-       <TDLINE>Como é verificado?</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>A verificação do digito verificador está ativada para o banco .</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>O campo chave de controle de bancos deve conter na primeira posição o</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>digito verificador da agencia bancaria, na segunda posição deve conter o</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>digito verificar da conta bancaria.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-       <TDLINE>Procedimento</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>O Dígito Verificador da Agência / Conta Corrente Código adotado pelo</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>Banco responsável pela conta corrente, para verificação da autenticidade</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>do par Código da Agência / Número da Conta Corrente.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U2</TDFORMAT>
-       <TDLINE>Exemplo para casos de 2 digitos</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>Para os Bancos que se utilizam de duas posições para o Dígito</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>Verificador do Número da Conta Corrente, preencher este campo com a 2ª</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDLINE>posição deste dígito.</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>Número C/C = 45981-36</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>Neste caso -&gt; Dígito Verificador da Ag/Conta = 6</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>U1</TDFORMAT>
-       <TDLINE>&amp;SYS_ADMIN&amp;</TDLINE>
-      </TLINE>
-      <TLINE>
-       <TDFORMAT>AS</TDFORMAT>
-       <TDLINE>#ERROR &amp;SYST-MSGV4&amp;</TDLINE>
-      </TLINE>
-     </LINES>
-    </item>
     <item>
      <DOKIL>
       <ID>NA</ID>
@@ -705,6 +487,503 @@
       </TLINE>
       <TLINE>
        <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>NA</ID>
+      <OBJECT>Z_BUPA005</OBJECT>
+      <LANGU>P</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00020</TXTLINES>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>Z_BUPA005</TDNAME>
+      <TDID>NA</TDID>
+      <TDSPRAS>P</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;CAUSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O Dígito Verificador da Agência / Conta Corrente é invalido ou menor que</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>2 caracteres.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Verifique o ID de dados bancários &amp;SYST-MSGV1&amp; da tela de dados</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Bancários do Parceiro de Negócios.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Como é verificado?</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>A verificação do digito verificador está ativada para o banco .</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O campo chave de controle de bancos deve conter na primeira posição o</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>digito verificador da agencia bancaria, na segunda posição deve conter o</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>digito verificar da conta bancaria.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Procedimento</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O Dígito Verificador da Agência / Conta Corrente Código adotado pelo</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Banco responsável pela conta corrente, para verificação da autenticidade</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>do par Código da Agência / Número da Conta Corrente.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>Exemplo para casos de 2 digitos</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para os Bancos que se utilizam de duas posições para o Dígito</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verificador do Número da Conta Corrente, preencher este campo com a 2ª</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>posição deste dígito.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Número C/C = 45981-36</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Neste caso -&gt; Dígito Verificador da Ag/Conta = 6</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SYS_ADMIN&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>#ERROR &amp;SYST-MSGV4&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>NA</ID>
+      <OBJECT>Z_BUPA006</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0002</VERSION>
+      <TXTLINES>00020</TXTLINES>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>Z_BUPA006</TDNAME>
+      <TDID>NA</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;CAUSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O Dígito Verificador da Agência / Conta Corrente é invalido ou menor que</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>2 caracteres.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Verifique o ID de dados bancários &amp;SYST-MSGV1&amp; da tela de dados</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Bancários do Parceiro de Negócios.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Como é verificado?</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>A verificação do digito verificador está ativada para o banco .</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O campo chave de controle de bancos deve conter na primeira posição o</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>digito verificador da agencia bancaria, na segunda posição deve conter o</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>digito verificar da conta bancaria.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Procedimento</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O Dígito Verificador da Agência / Conta Corrente Código adotado pelo</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Banco responsável pela conta corrente, para verificação da autenticidade</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>do par Código da Agência / Número da Conta Corrente.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>Exemplo para casos de 2 digitos</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para os Bancos que se utilizam de duas posições para o Dígito</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verificador do Número da Conta Corrente, preencher este campo com a 2ª</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>posição deste dígito.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Número C/C = 45981-36</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Neste caso -&gt; Dígito Verificador da Ag/Conta = 6</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SYS_ADMIN&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>#ERROR &amp;SYST-MSGV4&amp;</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>NA</ID>
+      <OBJECT>Z_BUPA006</OBJECT>
+      <LANGU>P</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00020</TXTLINES>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>Z_BUPA006</TDNAME>
+      <TDID>NA</TDID>
+      <TDSPRAS>P</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;CAUSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O Dígito Verificador da Agência / Conta Corrente é invalido ou menor que</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>2 caracteres.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Verifique o ID de dados bancários &amp;SYST-MSGV1&amp; da tela de dados</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Bancários do Parceiro de Negócios.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Como é verificado?</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>A verificação do digito verificador está ativada para o banco .</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O campo chave de controle de bancos deve conter na primeira posição o</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>digito verificador da agencia bancaria, na segunda posição deve conter o</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>digito verificar da conta bancaria.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Procedimento</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O Dígito Verificador da Agência / Conta Corrente Código adotado pelo</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Banco responsável pela conta corrente, para verificação da autenticidade</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>do par Código da Agência / Número da Conta Corrente.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>Exemplo para casos de 2 digitos</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para os Bancos que se utilizam de duas posições para o Dígito</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verificador do Número da Conta Corrente, preencher este campo com a 2ª</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>posição deste dígito.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Número C/C = 45981-36</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Neste caso -&gt; Dígito Verificador da Ag/Conta = 6</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SYS_ADMIN&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>#ERROR &amp;SYST-MSGV4&amp;</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>NA</ID>
+      <OBJECT>Z_BUPA058</OBJECT>
+      <LANGU>P</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0004</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00009</TXTLINES>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>Z_BUPA058</TDNAME>
+      <TDID>NA</TDID>
+      <TDSPRAS>P</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;CAUSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O Business Partner possui formas de pagamento que obrigam a info.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dedados bancários.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SYSTEM_RESPONSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Financeiro exige que sejam informados dados bancários.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;WHAT_TO_DO&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Você deve informar dados bancários na visão geral do BP.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>No processo onde as formas de pagamento são DOC, TED e Transferências</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ainformação dos dados bancários são obrigatórias.Corrigir as informações</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>antes de salvar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SYS_ADMIN&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Caso a validação não seja cumprida, as modificações no Business Partner</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>serão descartadas!</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>NA</ID>
+      <OBJECT>Z_BUPA059</OBJECT>
+      <LANGU>P</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0011</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00006</TXTLINES>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>Z_BUPA059</TDNAME>
+      <TDID>NA</TDID>
+      <TDSPRAS>P</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00011</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;CAUSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ocorreu &amp;ABAP_RUNTIME_ERROR&amp; &lt;ZH&gt;&amp;V1&amp;&lt;/&gt;, mas ela não foi tratada</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>localmente nem declarada por meio de uma cláusula raising.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;WHAT_TO_DO&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Verificar o ponto onde ocorreu a exceção:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Programa: &lt;ZH&gt;&amp;V2&amp;&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Include: &lt;ZH&gt;&amp;V3&amp;&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Linha: &lt;ZH&gt;&amp;V4&amp;&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SYS_ADMIN&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
       </TLINE>
      </LINES>
     </item>
@@ -899,6 +1178,56 @@
      <SPRSL>E</SPRSL>
      <MSGNR>035</MSGNR>
      <TEXT>Extension for Vendor &amp;1 with Erros!</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>036</MSGNR>
+     <TEXT>Verification without errors! the BP will be created.</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>037</MSGNR>
+     <TEXT>BP &amp;1 (&amp;2) already registered.</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>038</MSGNR>
+     <TEXT>Business Partner &amp;1 &amp;2 successfully created!</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>039</MSGNR>
+     <TEXT>BP &amp;1 successfully created! Vendor view not created, Check MDS_PPO2!</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>040</MSGNR>
+     <TEXT>Sales Org. &amp;1 is not valid as a template for Customer &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>041</MSGNR>
+     <TEXT>Org. Sales Destination &amp;1 is the same of origin &amp;2. Please check</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>043</MSGNR>
+     <TEXT>Source Sales Organization filled. Please indicate the destination.</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>044</MSGNR>
+     <TEXT>Company &amp;1 is not valid as a template for Customer &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>045</MSGNR>
+     <TEXT>Please indicate a valid customer to extend</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>046</MSGNR>
+     <TEXT>Please enter Company or Sales Org. valid as source data.</TEXT>
     </item>
    </T100_TEXTS>
   </asx:values>
